@@ -2,21 +2,21 @@
 <html lang="pt-br"  xmlns:th="http://www.thymeleaf.org" >
 <head>
     <meta charset="UTF-8">
-    <title>oiooio</title>
+    <title>Olá</title>
 </head>
 <body>
-    <h1>Lista de Alunos</h1>
+    <h1>Lista de Anmais</h1>
     <table>
         <thead>
         <tr>
-            <th>Nome da comida</th>
-            <th>País</th>
+            <th>Nome do animal</th>
+            <th>Tipo</th>
         </tr>
         </thead>
         <tbody>
-        <tr th:each="comidas: ${comidas}" >
-            <td th:text="${comidas.nome}">Comidas</td>
-            <td th:text="${comidas.pais}" >País</td>
+        <tr th:each="comidas: ${animais}" >
+            <td th:text="${animais.nome}">Animais</td>
+            <td th:text="${animais.tipo}" >Tipo</td>
         </tr>
         </tbody>
     </table>
