@@ -2,10 +2,10 @@ package com.example.mvc.models;
 
  //https://github.com/ClaudioNunes/DemoMVC/blob/master/src/main/java/br/edu/fatec/mvcDemo/models/Aluno.java
 
-public class Comidas {
+public class Animais {
 
     private String nome;
-    private String pais;
+    private String tipo;
 
     //private double p1;
 
@@ -19,12 +19,12 @@ public class Comidas {
         this.nome = nome;
     }
 
-    public String getPais() {
-        return pais;
+    public String getTipo() {
+        return tipo;
     }
 
-    public void setPais(String pais) {
-        this.pais = pais;
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 /*
     public double getP1() {
@@ -43,8 +43,8 @@ public class Comidas {
         this.p2 = p2;
     }
 */
-    public Comidas(String nome, String pais) {
+    public Animais(String nome, String tipo) {
         this.nome = nome;
-        this.pais = pais;
+        this.tipo = tipo;
     }
 }

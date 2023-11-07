@@ -1,7 +1,7 @@
 package com.example.mvc.controllers;
 
 
-import com.example.mvc.models.Comidas;
+import com.example.mvc.models.Animais;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,19 +10,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController //retorna dados e não view html; view = front end
-@RequestMapping("/api/comidas")
+@RequestMapping("/api/animais")
     public class DadosController {
-        private static final List<Comidas>
-                comidas = new ArrayList<Comidas>();
+        private static final List<Animais>
+                animais = new ArrayList<Animais>();
 
         public DadosController() {
-            comidas.add(new Comidas("Coxinha","Brasil"));
-            comidas.add(new Comidas("Burrito","Mexico"));
-            comidas.add(new Comidas("Hamburguer","EUA"));
+            animais.add(new Animais("Gato","Felino"));
+            animais.add(new Animais("Morcego","Mamífero"));
+            animais.add(new Animais("Tilápia","Peixe"));
     }
 
     @GetMapping
-    public List<Comidas> getComidas () {
-            return comidas;
+    public List<Animais> getAnimais () {
+            return animais;
     }
 }
